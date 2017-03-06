@@ -1,0 +1,9 @@
+article {
+  padding-bottom: 10px;
+
+  &:nth-child(2) {
+    background-color: gray;
+  }
+
+  font-size: 1.5em;
+}

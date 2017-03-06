@@ -1,0 +1,66 @@
+$time: 0.5s;
+$degree: 720deg;
+
+.social-button {
+  a {
+    border: 1px solid silver;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: all $time ease 0s;
+    -moz-transition: all $time ease 0s;
+    -webkit-transition: all $time ease 0s;
+    -ms-transition: all $time ease 0s;
+    -o-transition: all $time ease 0s;
+
+    &:link {}
+    &:visited {}
+    &:active {}
+    &:hover {
+      text-decoration: none;
+
+      transform: scale(1.1) rotate($degree);
+      -webkit-transform: scale(1.1) rotate($degree);
+      -moz-transform: scale(1.1) rotate($degree);
+      -ms-transform: scale(1.1) rotate($degree);
+      -o-transform: scale(1.1) rotate($degree);
+    }
+  }
+
+  .facebook:hover{
+    border: 2px solid #3b5998;
+    background: #3b5998;
+    color: #ffffff;
+  }
+
+  .twitter:hover{
+    border: 2px solid #1da1f2;
+    background: #1da1f2;
+    color: #ffffff;
+  }
+
+  .youtube:hover{
+    border: 2px solid #cc181e;
+    background: #cc181e;
+    color: #ffffff;
+  }
+
+  .instagram:hover{
+    border: 2px solid #c54276;
+    background: #c54276;
+    color: #ffffff;
+  }
+
+  .google-plus:hover{
+    border: 2px solid #db4437;
+    background: #db4437;
+    color: #ffffff;
+  }
+}

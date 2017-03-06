@@ -1,0 +1,57 @@
+/*
+.main-nav {
+  height: 80px;
+  .container {
+    height: 100%;
+
+    .navbar-header {
+      height: 100%;
+      .navbar-brand {
+        height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+    .nav {
+      height: 100%;
+      li {
+        height: 100%;
+        a {
+          height: 100%;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+*/
+
+.main-nav {
+  .container {
+    height: 100%;
+
+    .navbar-header {
+      height: 100%;
+      .navbar-brand {
+        height: 100%;
+        img {
+          height: 20px;
+        }
+      }
+    }
+
+    .nav {
+      height: 100%;
+      li {
+        height: 100%;
+        a {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
