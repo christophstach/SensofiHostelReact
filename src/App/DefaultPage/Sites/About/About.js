@@ -1,16 +1,15 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import './About.css';
 
-export default class About extends Component {
-    render() {
-        return (
-            <Grid>
-                <Row>
-                    <Col md={12}>About</Col>
-                </Row>
-            </Grid>
-        );
-    }
-}
+const About = () => (
+    <Grid>
+        <Row>
+            <Col md={12}>About</Col>
+        </Row>
+    </Grid>
+);
+
+
+export default About;

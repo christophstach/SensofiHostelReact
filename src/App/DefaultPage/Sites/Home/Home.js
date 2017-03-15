@@ -1,11 +1,11 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import './Home.css';
 import { Grid, Row, Col } from 'react-bootstrap';
 
-export default class Home extends Component {
-    render() {
-        let text = `
+const Home = () => {
+
+    const text = `
             The hostel is new, but the building is over 100 years old and typical canarian... And we love everything related to the canary islands.
             Sansofí means "Welcome guest" in guanche, the language of the canarian ancestors, and we definitely want you to feel welcome from the moment you enter Sansofís doors.
             If you feel for holidays away from mass tourism, yet near enough to local and tourist attractions: Then you are at the right place ;))
@@ -19,20 +19,23 @@ export default class Home extends Component {
             At Sansofi´s you´ll be able to get to know the local life of Tenerife, yet it is near enough to the tourist places and beaches.
         `;
 
-        return (
-            <Grid>
-                <Row>
-                    <Col md={12}>{
-                        text.split("\n").map((v) => {
-                            if(!v) {
+    return (
+        <Grid>
+            <Row>
+                <Col md={12}>{
+                    text.split("\n").map(
+                        (v) => {
+                            if (!v) {
                                 return null;
                             }
 
                             return <p key={v}>{v.trim()}</p>
-                        })
-                    }</Col>
-                </Row>
-            </Grid>
-        );
-    }
-}
+                        }
+                    )
+                }</Col>
+            </Row>
+        </Grid>
+    );
+};
+
+export default Home;
